@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="252.0" prefWidth="252.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lotto.FXMLDocumentController">
+    <children>
+      <Pane id="basePane" fx:id="basePane" layoutX="-7.0" prefHeight="272.0" prefWidth="279.0">
+         <children>
+            <Button id="btnSorsolas" fx:id="btnSorsolas" layoutX="114.0" layoutY="227.0" onAction="#handleButtonAction" text="Sorsolás" />
+            <Label layoutX="11.0" layoutY="60.0" text="Adjon meg különböző számot 1-90-ig:">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font></Label>
+            <TextField id="txt1" fx:id="txt1" layoutX="20.0" layoutY="91.0" prefHeight="25.0" prefWidth="39.0" />
+            <TextField id="txt2" fx:id="txt2" layoutX="71.0" layoutY="91.0" prefHeight="25.0" prefWidth="39.0" />
+            <TextField id="txt3" fx:id="txt3" layoutX="124.0" layoutY="91.0" prefHeight="25.0" prefWidth="39.0" />
+            <TextField id="txt4" fx:id="txt4" layoutX="180.0" layoutY="91.0" prefHeight="25.0" prefWidth="39.0" />
+            <TextField id="txt5" fx:id="txt5" layoutX="238.0" layoutY="91.0" prefHeight="25.0" prefWidth="39.0" />
+            <Label layoutX="11.0" layoutY="129.0" prefHeight="17.0" prefWidth="261.0" text="       1.            2.              3.              4.               5." />
+            <Label id="lb1" fx:id="lb1" layoutX="30.0" layoutY="170.0" />
+            <Label id="lb2" fx:id="lb2" layoutX="81.0" layoutY="170.0" />
+            <Label id="lb3" fx:id="lb3" layoutX="133.0" layoutY="170.0" />
+            <Label id="lb4" fx:id="lb4" layoutX="190.0" layoutY="170.0" />
+            <Label id="lb5" fx:id="lb5" layoutX="248.0" layoutY="170.0" />
+            <Label alignment="CENTER" layoutX="44.0" layoutY="21.0" text="5-ös lottó JAVA FX-ben" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="11.0" layoutY="153.0" text="Sorsolt számok:">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label id="lbResult" fx:id="lbResult" alignment="CENTER" layoutX="7.0" layoutY="204.0" prefHeight="17.0" prefWidth="274.0" text="Label" textAlignment="CENTER" textFill="#972929" visible="false">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane id="alertPane" fx:id="alertPane" layoutX="7.0" prefHeight="252.0" prefWidth="267.0" visible="false">
+         <children>
+            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#748da4" height="203.0" layoutX="14.0" layoutY="30.0" stroke="#f8f8f8" strokeLineCap="ROUND" strokeType="INSIDE" width="261.0" />
+            <Label id="alertMessage" fx:id="alertMessage" alignment="CENTER" contentDisplay="CENTER" layoutX="23.0" layoutY="44.0" prefHeight="142.0" prefWidth="240.0" text="Ladddbel" />
+            <Button id="btnAlertPaneOK" fx:id="btnAlertPaneOK" layoutX="128.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleBtnAlertPaneOK" text="OK" />
+         </children></Pane>
+    </children>
+</AnchorPane>
